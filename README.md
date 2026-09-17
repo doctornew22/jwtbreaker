@@ -89,7 +89,7 @@ python jwtbreaker.py --token "eyJ..." --attack all --victim "administrator"
 
 Example 2: Lab – JWT authentication bypass via weak signing key
 
-python jwtbreaker.py --token "eyJ..." --crack /usr/share/wordlists/rockyou.txt
+python jwtbreaker.py --token "eyJ..." --crack ./jwt_secret.txt
 python jwtbreaker.py --token "eyJ..." --attack payload --victim "administrator" --secret "found_secret"
 
 Example 3: Lab – JWT authentication bypass via kid header path traversal
